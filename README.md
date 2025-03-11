@@ -16,6 +16,8 @@ Recently, 4D millimetre-wave radar exhibits more stable perception ability than 
 
 This repo is based on [CMFlow](https://github.com/Toytiny/CMFlow), we are very grateful for their excellent work.
 
+We are also very grateful for the support and assistance of Shouyi Lu, the author of [4DRO-Net](https://ieeexplore.ieee.org/document/10237296/).
+
 ## Citation
 
 If you find our repository useful, please consider citing us as
