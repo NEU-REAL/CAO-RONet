@@ -20,6 +20,18 @@ Recently, 4D millimetre-wave radar exhibits more stable perception ability than 
 
 The overview of our proposed CAO-RONet. At first, the two frames of radar features derived from backbone are fed into LCM to densify sparse points. Then, CAM implements feature-assisted registration to associate point pairs in different scales, followed by correlation balancing to suppress outliers. Finally, COM with sequential state modeling applies historical prior from clip window to constraint the current ego-motion prediction and smooth trajectory.
 
+## Quickstart
+
+### 1. Environment Setup
+Our code is implemented on Python 3.8 with Pytorch 2.1.0 and CUDA 11.8. To reproduce and use our environment, you can use the following command:
+
+```
+git clone https://github.com/NEU-REAL/CAO-RONet.git
+cd CAO-RONet
+conda env create -f environment.yaml
+conda activate ronet
+```
+
 ## Acknowledgement
 
 This repo is based on [CMFlow](https://github.com/Toytiny/CMFlow), we are very grateful for their excellent work.                     
