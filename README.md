@@ -57,7 +57,7 @@ You need to preprocess the original dataset into our odometry format.
 # for original data
 python preprocess/preprocess_vod_odm.py --root_dir $ROOT_DIR$ --save_dir $SAVE_DIR$
 # for example
-python preprocess/preprocess_vod_odm.py --root_dir data/Delft --save_dir data/Delft/odm
+# python preprocess/preprocess_vod_odm.py --root_dir data/Delft --save_dir data/Delft/odm
 ```
 where `$ROOT_DIR$` is the path of the VoD dataset. The final odometry samples will be saved under the `$SAVE_DIR$/odom_smp/`.                
 **Note that** it is normal for some errors to occur during preprocessing, please refer to [CMFlow](https://github.com/Toytiny/CMFlow/blob/master/src/GETTING_STARTED.md)'s explanation.
@@ -67,13 +67,15 @@ As mentioned in our paper, we perform data augmentation to produce more samples.
 # for more data
 python preprocess/preprocess_vod_odm_reverse.py --root_dir $ROOT_DIR$
 # for example
-python preprocess/preprocess_vod_odm_reverse.py --root_dir data/Delft/odm/odm_smp/train/
+# python preprocess/preprocess_vod_odm_reverse.py --root_dir data/Delft/odm/odm_smp/train/
 ```
 
 ### 3. Model Training
 Running the following command to start training.
 ```
 python main_odm.py --dataset_path $DATA_PATH$ --exp_name $EXP_NAME$  --model ronet --dataset vodClipDatasetOdm
+# for example
+# python main_odm.py --dataset_path data/Delft/odm/odm_smp/ --exp_name baseline --model ronet --dataset vodClipDatasetOdm
 ```
 Similar to CMFlow, `$DATA_PATH$` is the path where you save your preprocessed odometry samples. `EXP_NAME` is the name of the current experiment defined by yourself. Training logs and results will be saved under `checkpoints/$EXP_NAME$/`. Besides, you can also modify training args, such as batch size, learning rate and number of epochs, by editing the configuration file `configs.yaml`.
 
