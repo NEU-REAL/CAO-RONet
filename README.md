@@ -43,7 +43,7 @@ c. Install common dependices and pytorch
 pip install torch==2.1.0 torchvision==0.16.0 torchaudio==2.1.0 --index-url https://download.pytorch.org/whl/cu118
 pip install -r requirements.txt
 
-# Please note that if 'ImportError: cannot import name' packaging 'from' pkg.sources' appears, please perform this operation
+# Please note that if "ImportError: cannot import name packaging from pkg.sources" appears, please perform this operation
 pip install --upgrade setuptools pip
 ```                      
 d. Install PointNet++ library for basic point cloud operation
