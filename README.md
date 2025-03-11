@@ -81,7 +81,7 @@ python main_odm.py --dataset_path $DATA_PATH$ --exp_name $EXP_NAME$  --model ron
 # for example
 # python main_odm.py --dataset_path data/Delft/odm/odm_smp/ --exp_name baseline --model ronet --dataset vodClipDatasetOdm
 ```
-Similar to CMFlow, `$DATA_PATH$` is the path where you save your preprocessed odometry samples. `EXP_NAME` is the name of the current experiment defined by yourself. Training logs and results will be saved under `checkpoints/$EXP_NAME$/`. Besides, you can also modify training args, such as batch size, learning rate and number of epochs, by editing the configuration file `configs.yaml`.
+`$DATA_PATH$` is the path where you save your preprocessed odometry samples. `EXP_NAME` is the name of the current experiment defined by yourself. Training logs and results will be saved under `checkpoints/$EXP_NAME$/`. Besides, you can also modify training args, such as batch size, learning rate and number of epochs, by editing the configuration file `configs.yaml`.
 
 ### 4. Model Evaluation
 Running the following command to start evaluation.
