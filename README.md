@@ -67,7 +67,7 @@ As mentioned in our paper, we perform data augmentation to produce more samples.
 # for more data
 python preprocess/preprocess_vod_odm_reverse.py --root_dir $ROOT_DIR$
 # for example
-python preprocess/preprocess_vod_odm_reverse.py --root_dir data/Delft/odm/odm_smp/
+python preprocess/preprocess_vod_odm_reverse.py --root_dir data/Delft/odm/odm_smp/train/
 ```
 
 ### 3. Model Training
