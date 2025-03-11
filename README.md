@@ -18,6 +18,14 @@ This repo is based on [CMFlow](https://github.com/Toytiny/CMFlow), we are very g
 
 We are also very grateful for the support and assistance of Shouyi Lu, the author of [4DRO-Net](https://ieeexplore.ieee.org/document/10237296/).
 
+## Overview
+
+<p align="center">
+    <img src="images/method.png" width="100%">
+</p>
+
+The overview of our proposed CAO-RONet. At first, the two frames of radar features derived from backbone are fed into LCM to densify sparse points. Then, CAM implements feature-assisted registration to associate point pairs in different scales, followed by correlation balancing to suppress outliers. Finally, COM with sequential state modeling applies historical prior from clip window to constraint the current ego-motion prediction and smooth trajectory.
+
 ## Citation
 
 If you find our repository useful, please consider citing us as
