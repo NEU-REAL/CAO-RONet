@@ -51,6 +51,14 @@ d. Install PointNet++ library for basic point cloud operation
 pip install "git+https://github.com/erikwijmans/Pointnet2_PyTorch.git#egg=pointnet2_ops&subdirectory=pointnet2_ops_lib"
 ```
 
+### 2. Data Preprocess
+You need to preprocess the original dataset into our odometry format.       
+```
+python preprocess/preprocess_vod_odm.py --root_dir $ROOT_DIR$ --save_dir $SAVE_DIR$
+
+python preprocess/preprocess_vod_odm_reverse.py --root_dir $ROOT_DIR$ --save_dir $SAVE_DIR$
+```
+
 ## Acknowledgement
 
 This repo is based on [CMFlow](https://github.com/Toytiny/CMFlow), we are very grateful for their excellent work.                     
