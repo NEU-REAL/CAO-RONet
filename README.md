@@ -62,7 +62,7 @@ python preprocess/preprocess_vod_odm.py --root_dir data/Delft --save_dir data/De
 python preprocess/preprocess_vod_odm_reverse.py --root_dir $ROOT_DIR$ --save_dir $SAVE_DIR$
 ```
 where `$ROOT_DIR$` is the path of the VoD dataset. The final odometry samples will be saved under the `$SAVE_DIR$/odom_smp/`.                
-Note that it is normal for some errors to occur during preprocessing, please refer to [CMFlow](https://github.com/Toytiny/CMFlow/blob/master/src/GETTING_STARTED.md)'s explanation.
+**Note that** it is normal for some errors to occur during preprocessing, please refer to [CMFlow](https://github.com/Toytiny/CMFlow/blob/master/src/GETTING_STARTED.md)'s explanation.
 
 ### 3. Model Training
 Running the following command to start training.
