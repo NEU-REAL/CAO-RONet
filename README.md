@@ -34,8 +34,13 @@ b. Set up a new environment with Anaconda
 ```
 conda create -n ronet python=3.8
 conda activate ronet
-```                     
+```                       
 c. Install common dependices and pytorch
+```
+pip install torch==2.1.0 torchvision==0.16.0 torchaudio==2.1.0 --index-url https://download.pytorch.org/whl/cu118
+pip install -r requirements.txt
+```
+
 
 ## Acknowledgement
 
