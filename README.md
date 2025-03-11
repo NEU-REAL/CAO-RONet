@@ -12,12 +12,6 @@
 
 Recently, 4D millimetre-wave radar exhibits more stable perception ability than LiDAR and camera under adverse conditions (e.g. rain and fog). However, low-quality radar points hinder its application, especially the odometry task that requires a dense and accurate matching. To fully explore the potential of 4D radar, we introduce a learning-based odometry framework, enabling robust ego-motion estimation from finite and uncertain geometry information. First, for sparse radar points, we propose a local completion to supplement missing structures and provide denser guideline for aligning two frames. Then, a context-aware association with a hierarchical structure flexibly matches points of different scales aided by feature similarity, and improves local matching consistency through correlation balancing. Finally, we present a window-based optimizer that uses historical priors to establish a coupling state estimation and correct errors of inter-frame matching. The superiority of our algorithm is confirmed on View-of-Delft dataset, achieving around a 50% performance improvement over previous approaches and delivering accuracy on par with LiDAR odometry.
 
-## Acknowledgement
-
-This repo is based on [CMFlow](https://github.com/Toytiny/CMFlow), we are very grateful for their excellent work.
-
-We are also very grateful for the support and assistance of Shouyi Lu, the author of [4DRO-Net](https://ieeexplore.ieee.org/document/10237296/).
-
 ## Overview
 
 <p align="center">
@@ -25,6 +19,12 @@ We are also very grateful for the support and assistance of Shouyi Lu, the autho
 </p>
 
 The overview of our proposed CAO-RONet. At first, the two frames of radar features derived from backbone are fed into LCM to densify sparse points. Then, CAM implements feature-assisted registration to associate point pairs in different scales, followed by correlation balancing to suppress outliers. Finally, COM with sequential state modeling applies historical prior from clip window to constraint the current ego-motion prediction and smooth trajectory.
+
+## Acknowledgement
+
+This repo is based on [CMFlow](https://github.com/Toytiny/CMFlow), we are very grateful for their excellent work.
+
+We are also very grateful for the support and assistance of Shouyi Lu, the author of [4DRO-Net](https://ieeexplore.ieee.org/document/10237296/).
 
 ## Citation
 
