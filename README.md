@@ -59,6 +59,12 @@ python preprocess/preprocess_vod_odm.py --root_dir $ROOT_DIR$ --save_dir $SAVE_D
 python preprocess/preprocess_vod_odm_reverse.py --root_dir $ROOT_DIR$ --save_dir $SAVE_DIR$
 ```
 
+### 3. Model Training
+Running the following command to start training.
+```
+python main_odm.py --dataset_path $DATA_PATH$ --exp_name $EXP_NAME$  --model ronet --dataset vodClipDatasetOdm
+```
+
 ## Acknowledgement
 
 This repo is based on [CMFlow](https://github.com/Toytiny/CMFlow), we are very grateful for their excellent work.                     
