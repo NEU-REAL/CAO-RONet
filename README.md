@@ -69,7 +69,7 @@ python preprocess/preprocess_vod_odm_reverse.py --root_dir $ROOT_DIR$
 # for example
 # python preprocess/preprocess_vod_odm_reverse.py --root_dir data/Delft/odm/odm_smp/train/
 ```
-**Please note** that the generated sequence names correspond to the paper sequence as follows
+**Please note** that the correspondence between the generated sequence names and the paper sequence is as follows:
 ```
 delft_1 -> 00, delft_4 -> 03, delft_6 -> 04, delft_9 -> 07, delft_27 -> 23
 ```
