@@ -25,12 +25,17 @@ The overview of our proposed CAO-RONet. At first, the two frames of radar featur
 ### 1. Environment Setup
 Our code is implemented on Python 3.8 with Pytorch 2.1.0 and CUDA 11.8. To reproduce and use our environment, you can use the following command:
 
+a. Clone the repository to local
 ```
 git clone https://github.com/NEU-REAL/CAO-RONet.git
 cd CAO-RONet
-conda env create -f environment.yaml
-conda activate ronet
+```               
+b. Set up a new environment with Anaconda
 ```
+conda create -n ronet python=3.8
+conda activate ronet
+```                     
+c. Install common dependices and pytorch
 
 ## Acknowledgement
 
