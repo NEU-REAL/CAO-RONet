@@ -66,6 +66,13 @@ python main_odm.py --dataset_path $DATA_PATH$ --exp_name $EXP_NAME$  --model ron
 ```
 Similar to CMFlow, `$DATA_PATH$` is the path where you save your preprocessed scene flow samples. `EXP_NAME` is the name of the current experiment defined by yourself. Training logs and results will be saved under `checkpoints/$EXP_NAME$/`. Besides, you can also modify training args, such as batch size, learning rate and number of epochs, by editing the configuration file `configs.yaml`.
 
+### 4. Model Evaluation
+Running the following command to start evaluation.
+```
+python main_odm.py --eval --dataset_path $DATA_PATH$ --exp_name $EXP_NAME$  --model ronet --dataset vodClipDatasetOdm
+```
+Once the evaluation is completed, the results on different metrics will be printed.
+
 ## Acknowledgement
 
 This repo is based on [CMFlow](https://github.com/Toytiny/CMFlow), we are very grateful for their excellent work.                     
