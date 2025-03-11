@@ -54,7 +54,10 @@ pip install "git+https://github.com/erikwijmans/Pointnet2_PyTorch.git#egg=pointn
 ### 2. Data Preprocess
 You need to preprocess the original dataset into our odometry format.       
 ```
+# for original data
 python preprocess/preprocess_vod_odm.py --root_dir $ROOT_DIR$ --save_dir $SAVE_DIR$
+# for example
+python preprocess/preprocess_vod_odm.py --root_dir data/Delft --save_dir data/Delft/odm
 
 python preprocess/preprocess_vod_odm_reverse.py --root_dir $ROOT_DIR$ --save_dir $SAVE_DIR$
 ```
