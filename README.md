@@ -89,6 +89,8 @@ Besides, you can also modify training args, such as batch size, learning rate an
 Running the following command to start evaluation.
 ```
 python main_odm.py --eval --dataset_path $DATA_PATH$ --exp_name $EXP_NAME$  --model ronet --dataset vodClipDatasetOdm
+# for example
+# python main_odm.py --eval --dataset_path data/Delft/odm/odm_smp/ --exp_name baseline --model ronet --dataset vodClipDatasetOdm
 ```
 Once the evaluation is completed, the results on different metrics will be printed.
 
