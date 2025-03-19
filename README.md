@@ -23,7 +23,22 @@ The overview of our proposed CAO-RONet. At first, the two frames of radar featur
 ## Quickstart
 
 ### 0. Data Download
-Please refer to [CMFlow](https://github.com/Toytiny/CMFlow/blob/master/src/GETTING_STARTED.md) for this section, which provides a detailed description.
+Please refer to [CMFlow](https://github.com/Toytiny/CMFlow/blob/master/src/GETTING_STARTED.md) for this section, which provides a detailed description.           
+Our data structure is as follows:
+```
+├──CAO-RONet
+ ├──data
+  ├──Delft
+    ├── radar (kitti dataset where velodyne contains the radar point clouds)
+    │   │── ImageSets
+    │   │── training
+    │   │   ├──calib & velodyne & image_2 & label_2
+    │   │── testing
+    │       ├──calib & velodyne & image_2
+    ├── lidar (kitti dataset where velodyne contains the LiDAR point clouds)
+    ├── radar_3_scans (kitti dataset where velodyne contains the accumulated radar point clouds of 3 scans)
+    ├── radar_5_scans (kitti dataset where velodyne contains the radar point clouds of 5 scans)
+```
 
 ### 1. Environment Setup
 Our code is implemented on Python 3.8 with Pytorch 2.1.0 and CUDA 11.8. To reproduce and use our environment, you can use the following command:
