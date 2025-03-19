@@ -94,6 +94,11 @@ python main_odm.py --eval --dataset_path $DATA_PATH$ --exp_name $EXP_NAME$  --mo
 ```
 Once the evaluation is completed, the results on different metrics will be printed.
 
+If you want to reproduce the results of the paper, we provide a pre-trained model on [OneDrive](https://1drv.ms/f/s!At4_yzPIbj7OcEWYZVYvh04o6pI?e=5SOrf9)
+```
+python main_odm.py --eval --dataset_path data/Delft/odm/odm_smp/ --exp_name pretrained_model --model ronet --dataset vodClipDatasetOdm
+```
+
 ## Acknowledgement
 
 This repo is based on [CMFlow](https://github.com/Toytiny/CMFlow), we are very grateful for their excellent work.                     
