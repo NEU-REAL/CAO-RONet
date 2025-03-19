@@ -8,5 +8,7 @@ matplotlib
 vod-tudelft
 opencv-python
 packaging
+tensorboardX
+timm
 causal-conv1d==1.1.1
 mamba-ssm==1.1.1
