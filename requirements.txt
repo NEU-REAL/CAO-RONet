@@ -1,0 +1,12 @@
+tqdm
+pyyaml
+ujson
+scipy
+open3d
+h5py
+matplotlib
+vod-tudelft
+opencv-python
+packaging
+causal-conv1d==1.1.1
+mamba-ssm==1.1.1
