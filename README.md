@@ -7,7 +7,7 @@
 [![arXiv](https://img.shields.io/badge/arXiv-2503.01438-b31b1b.svg)](https://arxiv.org/abs/2503.01438)
 </div>
 
-CAO-RONet was accepted to ICRA 2025. :confetti_ball:
+CAO-RONet was accepted to **ICRA 2025**. :confetti_ball:
 
 ## Absract
 
