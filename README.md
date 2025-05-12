@@ -4,7 +4,7 @@
 
 **Zhiheng Li**, Yubo Cui, Ningyuan Huang, Chenglin Pang, Zheng Fang*
 
-[![arXiv](https://img.shields.io/badge/arXiv-2503.01438-b31b1b.svg)](https://arxiv.org/abs/2503.01438)
+[![arXiv](https://img.shields.io/badge/arXiv-2503.01438-b31b1b.svg)](https://arxiv.org/abs/2503.01438) [![ICRA2025]([https://img.shields.io/badge/arXiv-2503.01438-b31b1b.svg](https://camo.githubusercontent.com/edaee223459a19ea4abae9e98c93ce40cda36580da4fe346bffd0cd359339bb1/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f494352412d323032352d626c7565))]
 
 </div>
 
